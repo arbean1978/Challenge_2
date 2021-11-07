@@ -19,9 +19,8 @@ header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
-header h1 .seo {
-    color: #d9dcd6;
+header h2 {
+    font-size: 36px;
 }
 
 header div {
@@ -29,9 +28,28 @@ header div {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 36px;
     position: relative;
-    top: -15px; 
+    top: -25px;     
+    position: -webkit-sticky;
+    display: flex;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0 , 0, 0.5);
+}
+
+header h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0 , 0, 0.5);
 }
 
 header div ul {
@@ -42,6 +60,37 @@ header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
+
+    header a {
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+    header nav {
+        margin: 7px 0;
+    }
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    header nav ul li {
+        display: inline;
+    }
+    header nav ul li a {
+        padding: 10px 15px;
+        font-weight: lighter;
+        font-size: 1.55vw;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    header nav ul li a:hover {
+        background: white;
+        color: navy;
+        border-radius: 15px;
+        text-shadow: none;
+    }
+
 /*--Header styling end--*/
 /**Main body styling--*/
 a {
@@ -54,12 +103,15 @@ p {
 }
 
 .hero {
-    height: 800px;
-    width: 100%;
+    height: 500px;
+    width: 400px;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    margin-top: 25px;
+    background-image: url("../images/portrait.jpg");
     background-size: cover;
     background-position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .float-left {
@@ -142,8 +194,11 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: navy;
     color: #ffffff;
+    font-size: 28px;
+    display: flex;
+    justify-content: left;
 }
 
 .my-portfolio {
@@ -151,8 +206,9 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: navy;
     color: #ffffff;
+    font-size: 28px;
 }
 
 .contact-me {
@@ -160,12 +216,14 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: navy;
     color: #ffffff;
+    font-size: 28px;
 }
 
-.search-engine-optimization img {
-    max-height: 200px;
+.my-bio img {
+    max-height: 300px;
+    max-width: 200px;
 }
 
 .online-reputation-management img {
